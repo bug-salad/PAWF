@@ -1,234 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Doug Devious - Wikipedia</title>
-  <style>
-    /* Mimicking Wikipedia's overall look */
-    body {
-      background-color: #f6f6f6;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #202122;
-      line-height: 1.5;
-      font-size: 15px;
-    }
-    /* Main content container */
-    #content {
-      background-color: #fff;
-      margin: 2em auto;
-      max-width: 800px;
-      padding: 1em 2em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    /* Article title styling */
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-    /* Infobox styling similar to Wikipedia */
-    .infobox {
-      float: right;
-      width: 250px;
-      margin: 0 0 1em 1em;
-      border: 1px solid #a2a9b1;
-      background-color: #f8f9fa;
-      font-size: 90%;
-      line-height: 1.4em;
-    }
-    .infobox table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .infobox th {
-      background-color: #dfe3e8;
-      padding: 4px;
-      text-align: left;
-      font-size: 1em;
-    }
-    .infobox td {
-      padding: 4px;
-      vertical-align: top;
-    }
-    .infobox img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    /* Table of contents styling */
-    .toc {
-      background-color: #f8f9fa;
-      border: 1px solid #a2a9b1;
-      padding: 0.5em 0.5em 0.5em 1em;
-      font-size: 90%;
-      margin-bottom: 1em;
-      clear: both;
-    }
-    .toc .toctitle {
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-    .toc ul {
-      list-style: none;
-      margin: 0;
-      padding-left: 0;
-    }
-    .toc li {
-      margin-left: 1em;
-      line-height: 1.4em;
-    }
-    .toc a {
-      color: #0645ad;
-      text-decoration: none;
-    }
-    .toc a:hover {
-      text-decoration: underline;
-    }
-    /* Headings similar to Wikipedia style */
-    h2 {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      border-bottom: 1px solid #a2a9b1;
-      padding-bottom: 0.2em;
-    }
-    h3 {
-      font-size: 1.3em;
-      margin-top: 1.2em;
-    }
-    /* Clear floats */
-    .clear {
-      clear: both;
-    }
-    /* Paragraphs */
-    p {
-      margin: 0.8em 0;
-    }
-    ul {
-      margin: 0.5em 0 0.5em 1.5em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWF | Work in Progress</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #121212;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #f8f9fa;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 2rem;
+            /* Optional: Add a subtle filter if the logo is dark and needs to be visible on a dark background */
+            /* filter: invert(1) brightness(2); */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #2a2a2a;
+            border-radius: 999px;
+            height: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            width: 60%; /* Adjust this percentage to show completion status */
+            background-color: #ffffff; /* Update to match PAWF brand color */
+            height: 100%;
+            border-radius: 999px;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-  <div id="content">
-    <!-- Article Title -->
-    <h1>Doug Devious</h1>
-    
-    <!-- Infobox with signature at the bottom -->
-    <div class="infobox">
-      <table>
-        <tr>
-          <td colspan="2">
-            <img src="Doug Devious.jpg" alt="Doug Devious">
-          </td>
-        </tr>
-        <tr>
-          <th colspan="2" style="text-align:center;">Doug Devious</th>
-        </tr>
-        <tr>
-          <td><strong>Real name</strong></td>
-          <td>Douglas Fucky</td>
-        </tr>
-        <tr>
-          <td><strong>Born</strong></td>
-          <td>July 31, 1978<br>Perry, Oklahoma, U.S.</td>
-        </tr>
-        <tr>
-          <td><strong>Debut</strong></td>
-          <td>November 17, 1994</td>
-        </tr>
-        <tr>
-          <td><strong>Retired</strong></td>
-          <td>November 17, 2024</td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align:center; padding-top: 8px;">
-            <img src="DDSig.png" alt="Doug Devious Signature" style="max-width:100%; height:auto;">
-          </td>
-        </tr>
-      </table>
+    <div class="container">
+        <!-- Logo implementation -->
+        <img src="pawf-logo-98-w3.png" alt="PAWF Logo" class="logo">
+        
+        <h1>Work in Progress</h1>
+        <p>We are currently building the new home for PAWF. Things are coming together behind the scenes, so check back soon.</p>
+        
+        <!-- Animated progress bar -->
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 PAWF. All rights reserved.
+        </div>
     </div>
-    
-    <!-- Introductory Paragraph -->
-    <p><b>Douglas Fucky</b> (born July 31, 1978), better known by his ring name <b>Doug Devious</b>, is an American retired professional wrestler. Over a 30-year career he competed globally in promotions including PAWF, NJPW, TNA, WWE, and various independent circuits. Known for his innovative blend of technical submission work, MMA-influenced grappling, and high-flying offense, he is widely regarded as one of the most complete and well-rounded performers of his generation.</p>
-    
-    <!-- Table of Contents -->
-    <div class="toc">
-      <div class="toctitle">Contents</div>
-      <ul>
-        <li><a href="#early-life">1. Early Life</a></li>
-        <li><a href="#wrestling-family">2. Wrestling Family</a></li>
-        <li><a href="#professional-career">3. Professional Wrestling Career</a></li>
-        <li><a href="#style-persona">4. Professional Wrestling Style and Persona</a></li>
-      </ul>
-    </div>
-    
-    <!-- Main Content Sections -->
-    <h2 id="early-life">1. Early Life</h2>
-    <p>Doug Devious was born Douglas Fucky on July 31, 1978, in Perry, Oklahoma, and spent his early years helping on the family farm. At the age of 12, his family moved to St. Clair, Michigan, where his father, Jonathan “Big John” Fucky Sr., later established the Post Aurora Wrestling Federation (PAWF) in 1998. As a teenager, Doug excelled in amateur wrestling, winning national championships in high school. Despite offers for collegiate wrestling scholarships, he chose to pursue a career in professional wrestling, beginning training in Brazilian jiu-jitsu, judo, and MMA at age 13.</p>
-    
-    <h2 id="wrestling-family">2. Wrestling Family</h2>
-    <p>Doug hails from the renowned Fucky wrestling family, a legacy that has left a lasting impact on the sport. Key members of his family include:</p>
-    <ul>
-      <li>Father: John Fucky Sr.</li>
-      <li>Brothers: John Fucky, Mark Fucky, Jake Fucky, and adopted brother Lars Stone</li>
-      <li>Cousins: Adam Fucky and Egg Chambers</li>
-      <li>Uncle: Uncle D</li>
-      <li>Wife: Kaiva Suzuki (married April 19, 2004)</li>
-    </ul>
-    <p>Their influence and involvement have been integral to many of the defining moments in Doug’s wrestling career.</p>
-    
-    <h2 id="professional-career">3. Professional Wrestling Career</h2>
-    
-    <h3>Training and Debut (1991–1994)</h3>
-    <p>Under the tutelage of his uncle, Dave “Uncle D” Fucky, and with support from his father, Doug began training in 1991. Sent to Jerry Lawler’s USWA system, he learned the fundamentals of Southern wrestling, making his debut on November 17, 1994, at the St. Clair Shores Civic Center—an arena he would later grace for his final match.</p>
-    
-    <h3>PAWF and "The St. Clair Sinners" (1997-2000)</h3>
-    <p>Doug teamed up with his adopted brother, Lars Stone, forming the tag team known as "The St. Clair Sinners." Making their debut on PAWF Monday Warfare, they quickly became fan favorites on the independent scene by capturing multiple PAWF Tag Team Championships.</p>
-    
-    <h3>Singles Heel Run (2000–2002)</h3>
-    <p>Embracing an egotistical Hollywood persona, Doug rebranded himself as Doug Devious, complete with aggressive promos and in-ring tactics that established him as one of the most dynamic heels of his era.</p>
-    
-    <h3>Independent Circuit (2002)</h3>
-    <p>After his heel run, Doug embarked on a journey across the independent circuit. High-profile matches against talents such as Bryan Danielson at ROH’s inaugural event and hard-fought bouts in Combat Zone Wrestling helped redefine his character and cemented his reputation.</p>
-    
-    <h3>New Japan Pro Wrestling (2003–2005)</h3>
-    <p>In 2003, Doug ventured to Japan, debuting in NJPW against Hiroshi Tanahashi. His blend of technical prowess and aerial offense led to winning the IWGP Heavyweight Championship in a match against Hiroyoshi Tenzan—marking a career milestone with a 302-day title reign.</p>
-    
-    <h3>Total Nonstop Action Wrestling (2006–2007)</h3>
-    <p>Doug made a significant impact in TNA, debuting at Destination X in 2006. Capturing both the TNA World Heavyweight and X-Division Championships through memorable bouts against Sting, AJ Styles, and others, his tenure in TNA was marked by versatility and relentless intensity.</p>
-    
-    <h3>World Wrestling Entertainment (2008)</h3>
-    <p>Doug’s WWE debut on Monday Night Raw in 2008 rapidly propelled him into the spotlight. He went on to win the WWE Intercontinental Championship and, later, the World Heavyweight Championship at Cyber Sunday, engaging in high-profile feuds and title defenses throughout his run.</p>
-    
-    <h3>Mexican Independent Circuit (2008)</h3>
-    <p>While with WWE, Doug also showcased his skills on the Mexican independent circuit—competing in AAA, CMLL, IWRG, and WWA. His matches in Mexico displayed his ability to adapt to lucha libre styles and further expanded his global appeal.</p>
-    
-    <h3>Dragon Gate USA (2009–2010) and Return to ROH/Chikara (2009)</h3>
-    <p>Doug joined Dragon Gate USA in 2009, capturing the inaugural Open the Freedom Gate Championship. He also returned to Ring of Honor and Chikara, engaging in technical and high-intensity matches that reaffirmed his legacy in the independent wrestling scene.</p>
-    
-    <h3>Return to PAWF and Face Turn (2010–2024)</h3>
-    <p>Returning to PAWF in 2010, Doug transitioned from a dominant heel to a more nuanced face character. Embracing an anti-hero persona, he helped nurture new talent while continuing to build on his storied career until his retirement.</p>
-    
-    <h3>Retirement (2024)</h3>
-    <p>On November 17, 2024—exactly 30 years after his debut—Doug faced longtime rival Jack Gallahay in an emotional farewell match at the St. Clair Shores Civic Center. The bout featured high-risk maneuvers, including a daring Frog Splash through a table and a dramatic Devious Death Drop, culminating in a submission victory via the Scorpion Cross Lock. The match ended with a heartfelt embrace between the two competitors, marking the end of an era.</p>
-    
-    <h2 id="style-persona">4. Professional Wrestling Style and Persona</h2>
-    <p>Doug Devious is celebrated for his versatile and innovative in-ring style. His repertoire combines technical wrestling, judo-based submissions, MMA strikes, and high-flying maneuvers. His signature moves and finishers have been central to his storied career.</p>
-    <p><strong>Signature Moves:</strong></p>
-    <ul>
-      <li><em>Kudo Driver</em> – Back-to-back double underhook piledriver</li>
-      <li><em>D-5</em> – Fireman’s carry facebuster</li>
-      <li><em>5★ Frog Splash</em> – Top-rope splash</li>
-    </ul>
-    <p><strong>Finishers:</strong></p>
-    <ul>
-      <li><em>Devious Death Drop (DDD)</em> – Vertical suplex piledriver</li>
-      <li><em>Scorpion Cross Lock</em> – Inverted sharpshooter combined with a double chickenwing</li>
-      <li><em>Diving Elbow Drop</em> – Top-rope elbow drop</li>
-    </ul>
-    
-    <div class="clear"></div>
-  </div>
 </body>
 </html>
