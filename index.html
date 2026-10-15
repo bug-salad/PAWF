@@ -31,8 +31,6 @@
             max-width: 250px;
             height: auto;
             margin-bottom: 2rem;
-            /* Optional: Add a subtle filter if the logo is dark and needs to be visible on a dark background */
-            /* filter: invert(1) brightness(2); */
         }
 
         h1 {
@@ -48,27 +46,11 @@
             line-height: 1.6;
         }
 
-        .progress-container {
-            width: 100%;
-            background-color: #2a2a2a;
-            border-radius: 999px;
-            height: 8px;
-            overflow: hidden;
-            margin: 2rem 0;
-        }
-
-        .progress-bar {
-            width: 60%; /* Adjust this percentage to show completion status */
-            background-color: #ffffff; /* Update to match PAWF brand color */
-            height: 100%;
-            border-radius: 999px;
-            animation: pulse 2s infinite ease-in-out;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+        .nino-image {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0 2rem 0;
+            border-radius: 12px; /* Optional: gives the image slightly rounded corners */
         }
 
         .footer {
@@ -86,10 +68,8 @@
         <h1>Work in Progress</h1>
         <p>We are currently building the new home for PAWF. Things are coming together behind the scenes, so check back soon.</p>
         
-        <!-- Animated progress bar -->
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-        </div>
+        <!-- Nino Image -->
+        <img src="nino.png" alt="Nino" width="1115" height="1115" class="nino-image">
 
         <div class="footer">
             &copy; 2026 PAWF. All rights reserved.
