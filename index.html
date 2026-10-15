@@ -50,7 +50,9 @@
             max-width: 100%;
             height: auto;
             margin: 1rem 0 2rem 0;
-            border-radius: 12px; /* Optional: gives the image slightly rounded corners */
+            /* Optional: prevents image dragging */
+            -webkit-user-drag: none;
+            user-select: none;
         }
 
         .footer {
@@ -75,5 +77,13 @@
             &copy; 2026 PAWF. All rights reserved.
         </div>
     </div>
+
+    <!-- Right-click prevention script -->
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault(); // Stops the right-click menu from appearing
+            alert("ROCK HARD FUCK YOU"); // Displays your custom message
+        });
+    </script>
 </body>
 </html>
